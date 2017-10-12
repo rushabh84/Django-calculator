@@ -1,0 +1,66 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project_2</title>
+         <link rel="stylesheet" href="/static/calculator.css">
+    </head>
+    <body>
+    <!-- navbar-->
+    <div class="topbar text-center">
+            <h1 class="topbar_header">Rush Calculator</h1>
+            <div style="width: 85%">
+                <p class ="calc-pitch">Shall we get back to Math?</p>
+            </div>
+    </div>
+
+
+    <div class="contain">
+        <p id="calc_start">Lets start the calculation.</p>
+        <form class = "calc_form" action="/calculator/" method="post">
+            <input type="text" id="current_row" placeholder="0" name = "current" value="{{current}}">
+            <br>
+            <br>
+            <input type="hidden" name="previous" value="{{previous}}">
+            <input type="hidden" name="operator" value="{{operator}}">
+            <input type="hidden" name="flag" value="{{flag}}">
+            <input type="hidden" name="previous_after" value="{{previous_after}}">
+
+            <!--buttons-->
+            <table class="cal_table">
+                <tr>
+                    <td><button class="button" type="submit" name="calc_buttons" value="7">7</button></td>
+                    <td><button class="button" type="submit" name="calc_buttons" value="8">8</button></td>
+                    <td><button class="button" type="submit" name="calc_buttons" value="9">9</button></td>
+                    <td><button class="button_operator" type="submit" name="calc_buttons" value="+">&plus;</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" type="submit" name="calc_buttons" value="4">4</button></td>
+                    <td><button class="button" type="submit" name="calc_buttons" value="5">5</button></td>
+                    <td><button class="button" type="submit" name="calc_buttons" value="6">6</button></td>
+                    <td><button class="button_operator" type="submit" name="calc_buttons" value="-">&minus;</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" type="submit" name="calc_buttons" value="1">1</button></td>
+                    <td><button class="button" type="submit" name="calc_buttons" value="2">2</button></td>
+                    <td><button class="button" type="submit" name="calc_buttons" value="3">3</button></td>
+                    <td><button class="button_operator" type="submit" name="calc_buttons" value="x">x</button></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><button class="button" type="submit" name="calc_buttons" value="0">0</button></td>
+                    <td><button class="button_operator" type="submit" name="calc_buttons" value="=">&equals;</button></td>
+                    <td><button class="button_operator" type="submit" name="calc_buttons" value="/">&divide;</button></td>
+                </tr>
+
+            </table>
+            <br>
+            <br>
+            {% csrf_token %}
+        </form>
+    </div>
+    </body>
+    </html>

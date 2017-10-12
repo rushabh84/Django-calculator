@@ -1,0 +1,118 @@
+/*Reference: Use bootstrap.min.css library and partly referred fron https://bootsnipp.com/snippets/featured/register-page, https://bootsnipp.com/snippets/xNkj9*/
+
+body, html{
+     height: 100%;
+ 	background-repeat: no-repeat;
+ 	background-color: lightcyan;
+ 	font-family: 'Oxygen', sans-serif;
+}
+
+.jumbo{
+    padding-top:10px;
+    padding-bottom:80px;
+    height: 140px;
+    color:inherit;
+    background-color:darkblue;
+}
+
+.main-heading{
+    font-size: 50px;
+    text-align: left;
+    margin-left: 1cm;
+    color: white;
+    font-weight: bold;
+}
+
+.main-pitch{
+    text-align: left;
+    margin-left: 1cm;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main{
+ 	margin-top: 70px;
+}
+
+h1.title {
+	font-size: 50px;
+    font-style: italic;
+	font-family: 'Passion One';
+	font-weight: 400;
+}
+
+.container{
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+/*referred from https://bootsnipp.com/snippets/featured/register-page-design*/
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 25px;
+}
+
+/*referred from https://bootsnipp.com/snippets/featured/register-page-design*/
+.form-control {
+    height: auto!important;  /*to adjust the size of input boxes to the corresponding icons*/
+    padding: 8px 12px !important;
+    font-size: 18px;
+    font-style: italic;
+}
+
+input{
+    height: 30px;
+}
+
+hr{
+	width: 10%;
+	color: #fff;
+}
+
+.form-group{
+	margin-bottom: 15px;
+    font-size: 40px;
+	font-family: 'Passion One';
+}
+
+label{
+	margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+/*Referred : https://bootsnipp.com/snippets/featured/register-page*/
+.main-login{
+    background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.main-center{
+ 	margin-top: 10px;
+ 	margin: 0 auto;
+ 	max-width: 430px;
+    padding: 40px 40px;
+
+}
+
+.login{
+	margin-top: 5px;
+}
+
+.login-register{
+	font-size: 15px;
+	text-align: center;
+}
